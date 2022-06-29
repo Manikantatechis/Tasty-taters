@@ -1,0 +1,270 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap'); */
+
+
+/******************
+
+COMMON
+
+******************/
+
+*{
+  margin: 0 auto;
+}
+
+  .containers .background img{
+    width: 100%;
+
+  }
+  body{
+    background-color: #f3f3f3;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: 'center';
+    margin-bottom: 100px;
+
+  }
+
+  .menu{
+    text-align: center;
+  }
+
+  .menu .btn{
+    padding: 2vw;
+    margin: 1vw;
+  }
+
+  .menu .btn a{
+    background-color: black;
+    padding: 1% 2%;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  .menu .btn a:hover{
+    background-color: red;
+  }
+    
+  .items img{
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+
+  }
+  .items {
+    box-shadow: 10px 12px 15px #888888;
+    width: 27vw;
+    height: 30vw;
+    margin-bottom: 10%;
+  }
+
+ h1{
+   grid-column: 1/-1;
+   text-align: center;
+ }
+.details{
+padding: 5%;
+font-size: 1vw;
+}
+
+img.heart {
+  width: 30px;
+}
+.like {
+  margin: 1px;
+  display: flex;
+  text-align: left;
+  width: 14%;
+}
+ 
+.details-sub>h5{
+  font-weight: 600;
+  font-size: 18px;
+
+}
+.details-sub a{
+  margin-right: 5%;
+    line-height: 3vw;
+    text-decoration: none;
+    color: blue;
+}
+
+.details-price button{
+  background-color: red;
+  border: none;
+  color: #f3f3f3;
+  font-size: 1vw;
+  font-weight: 600;
+  border-radius: 30px;
+  width: 40%;
+  float: left;
+  padding: 2%;
+  margin-right: 5%;
+}
+h3.price {
+  color: red;
+  padding: 1% 0px;  
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 90%;
+  margin: 5%;
+}
+footer img{
+  width: 15%;
+}
+footer{
+  text-align: center;
+}
+footer .conclude{
+  color: gray;
+}
+.total {
+  display: flex;
+  gap: 35%;
+  width: 90%;
+  margin: 5%;
+}
+.total button{
+  background-color: red;
+  border: none;
+  color: #f3f3f3;
+  border-radius: 30px;
+  width: 10%;
+  padding: 1%;
+}
+@media screen and (max-width:850px){
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;  
+  }
+  .items {
+    width: 40vw;
+    height: 45vw;
+}
+.details {
+  font-size: 2vw;
+}
+.total button {
+  width: 30%;
+}
+}
+@media screen and (max-width:450px){
+  .container {
+    display: grid;
+    grid-template-columns: auto;  
+  }
+  .items {
+    width: 80vw;
+    height: 94vw;  
+ }
+.details {
+  font-size: 5vw;
+}
+.details-price button{
+  font-size: 4vw;
+}
+}
+
+/**************************************************
+                 Popup
+***************************************************/
+
+.popup-inner {
+  position: fixed;
+  background-color: white;
+  width: 40%;
+  top: 12%;
+  left: 30%;
+  text-align: left;
+  padding: 2%;
+
+}
+form.popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0,0,0,50%);
+}
+.input {
+  margin-left: 9%;
+  width: 85%;
+  line-height: 5vw;
+}
+.buttons button:hover{
+  box-shadow: 2px 5px 9px #aaaaaa;
+}
+.buttons button {
+  width: 22%;
+  margin: 1%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 53px;
+  padding: 2%;
+  }
+
+.buttons button img {
+    width: 15px;
+    }
+input[type="text"] {
+      border: 1px solid white;
+      border-bottom: 1px solid black;
+      width: 96%;
+}
+textarea{
+  border: 1px solid white;
+  border-bottom: 1px solid black;
+  width: 96%;
+}
+.send button{
+  width: 22%;
+  margin: 1%;
+  color: white;
+  background-color: red;
+  border: 1px solid #ccc;
+  border-radius: 53px;
+  padding: 2%;
+}
+
+.sendd input[type="text"] {
+  border: 1px solid white;
+  width: 96%;
+}
+.sendd textarea{
+border: 1px solid white;
+border-bottom: 1px solid black;
+width: 96%;
+height: 6vw;
+}
+img.close {
+  float: right;
+}
+@media screen and (max-width:1400px){
+  .buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 76%;
+    grid-gap: 25%;
+    margin-bottom: 7%;
+}
+.buttons button{
+width: 100%;
+}
+}
+@media screen and (max-width:850px){
+.popup-inner{
+  width: 50%;
+  left: 25%;
+  }
+  .input{
+  line-height: 10vw;
+  }
+  .buttons button {
+    width: 120%;
+}
+  }
+  @media screen and (max-width: 450px){
+.popup-inner {
+    width: 80%;
+    left: 7%;
+}
+  }
